@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ body                     { margin: 0px; text-align:center; font-family: Arial; }
+
+ ul                       { margin: 0px; list-style: none; padding: 0px; }
+ a                        { text-decoration: none; }
+
+ .xleft                   { float: left; }
+ .xright                  { float: right; }
+ .xclear                  { clear: both; }
+
+ .rightcontent            { width: 35%; float: right; }
+ .leftcontent             { width: 35%; float: left; }
+ .content                 { width: 1100px; margin: 0 auto; }
+
+ header                   { background-image: url('/assets/header.jpg'); height: 465px; background-position: center 0px; }
+ header ul#right-links    { float: right; margin-right: 105px; }
+ header ul                { margin-top: 25px; }
+ header ul li             { display: inline; margin-right: 35px; }
+ header ul li a           { color: #8e8e8e; font-size: 12px; margin-top: -20px;}
+ header ul li a:hover     { color: #ffffff;}
+
+ div#prearea h3           { margin: 100px 0; }
+ div#prearea li           { float: left; border-right: 1px solid #f1f1f1; padding: 0px 10px; }
+ div#prearea li.last      { border-right: none; }
+ div#prearea li a         { color: #000; font-size: 10px; }
+
+ div#gallery              { background: #eeeeee; width: 100%; }
+ div#gallery ul           { margin: 50px 0px; }
+ div#gallery ul li        { background: #fff; padding: 10px; border: 1px solid #dcdcdc;
+                            margin: 0px 17px 17px 0px; float: left; color: #484848; font-size: 11px; text-align: left; }
+
+footer                    { height: 3276px; background-image: url('/assets/footer.jpg'); background-position: center 0px; }
+

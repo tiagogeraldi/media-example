@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nike</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <%= image_tag 'nike.jpg', :class => 'xleft' %>
+
+      <ul class="xleft">
+        <li></li>
+        <li><a href="#">WATCH</a></li>
+        <li><a href="#">LEARN</a></li>
+        <li><a href="#">ENCHANT</a></li>
+      </ul>
+
+      <ul id="right-links">
+        <li><a href="#">SIGN IN</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <%= yield %>
+
+  <footer></footer>
+</body>
+</html>

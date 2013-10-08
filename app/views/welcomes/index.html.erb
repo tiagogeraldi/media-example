@@ -1,0 +1,42 @@
+<div id="prearea" class="content">
+  <h3><%= image_tag 'subtitle.jpg' %></h3>
+
+  <div class="leftcontent">
+    <ul class="xleft">
+      <li><a href="#">ALL</a></li>
+      <li><a href="#">MOST POPULAR</a></li>
+      <li><a href="#">VOICE</a></li>
+      <li><a href="#">INSTRUMENTS</a></li>
+      <li class="last"><a href="#">LYRICS</a></li>
+    </ul>
+  </div>
+
+  <div class="rightcontent">
+    <%= image_tag 'filter.jpg', class: 'xright' %>
+  </div>
+
+  <%= image_tag 'nav.jpg', class: 'xcenter' %>
+
+  <br class="xclear"/>
+</div>
+
+<div id="gallery">
+  <div class="content">
+    <%= image_tag 'hashtag.jpg', class: 'xleft' %>
+
+    <%= image_tag 'powered.jpg', class: 'xright' %>
+
+    <br class="xclear"/>
+
+    <ul>
+      <% @assets.data.each do |asset| %>
+      <li>
+        <%= image_tag(asset.thumbnail) %><br/>
+        <%= asset.user.name %>
+      </li>
+      <% end %>
+    </ul>
+
+    <br class="xclear"/>
+  </div>
+</div>
