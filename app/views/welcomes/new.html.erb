@@ -1,0 +1,14 @@
+<h2>Video Upload</h2>
+
+<%= form_for :video, :url => welcomes_path, input_html: { multipart: :true } do |f| %>
+
+<p>
+  <%= f.label :video %>
+  <%= f.file_field :video %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
+
+<% end %>

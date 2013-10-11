@@ -1,4 +1,9 @@
-<div id="banner"></div>
+<div id="banner">
+  <div id="ban-links">
+    <%= link_to image_tag('submit.jpg'), new_welcome_path %>
+    <%= link_to image_tag('learnmore.jpg'), '#' %>
+  </div>
+</div>
 
 <div id="prearea" class="content">
   <h3><%= image_tag 'subtitle.jpg' %></h3>
@@ -33,12 +38,12 @@
     <ul>
       <% @assets.data.each do |asset| %>
       <li>
-        <%= image_tag(asset.thumbnail) %><br/>
+        <%= link_to image_tag(asset.thumbnail), welcome_path(id: asset.id) %><br/>
         <%= asset.user.name %>
       </li>
-      <% end %>
-    </ul>
+       <% end %>
+     </ul>
 
-    <br class="xclear"/>
-  </div>
-</div>
+     <br class="xclear"/>
+   </div>
+ </div>

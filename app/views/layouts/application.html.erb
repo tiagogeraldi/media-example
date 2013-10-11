@@ -5,11 +5,14 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <link href="http://vjs.zencdn.net/4.2/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.2/video.js"></script>
 </head>
 <body>
   <header>
     <div class="content">
-      <%= image_tag 'nike.jpg', :class => 'xleft' %>
+      <%= link_to image_tag('nike.jpg', :class => 'xleft'), root_path %>
 
       <ul class="xleft">
         <li></li>

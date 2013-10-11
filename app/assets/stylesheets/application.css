@@ -41,6 +41,7 @@
  header #usa-flag         { margin-top: -7px; }
 
  #banner                  { background-image: url('/assets/header.jpg'); height: 395px; background-position: center 0px; }
+ #banner #ban-links       { margin: 0 auto; padding: 250px 0px 0px 605px; }
 
  div#prearea h3           { margin: 100px 0; }
  div#prearea li           { float: left; border-right: 1px solid #f1f1f1; padding: 0px 10px; }
@@ -51,6 +52,8 @@
  div#gallery ul           { margin: 50px 0px; }
  div#gallery ul li        { background: #fff; padding: 10px; border: 1px solid #dcdcdc;
                             margin: 0px 17px 17px 0px; float: left; color: #484848; font-size: 11px; text-align: left; }
+
+#show                     { padding: 30px 0px; margin: 0 auto; width: 650px; }
 
 footer                    { height: 590px; background-image: url('/assets/footer.jpg'); background-position: center 0px; }
 
