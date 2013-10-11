@@ -15,7 +15,9 @@
  body                     { margin: 0px; text-align:center; font-family: Arial; }
 
  ul                       { margin: 0px; list-style: none; padding: 0px; }
- a                        { text-decoration: none; }
+
+ a:visited,
+ a                        { text-decoration: none; color: #000; font-weight: bold; margin: 10px 0px;}
 
  .xleft                   { float: left; }
  .xright                  { float: right; }
@@ -25,12 +27,20 @@
  .leftcontent             { width: 35%; float: left; }
  .content                 { width: 1100px; margin: 0 auto; }
 
- header                   { background-image: url('/assets/header.jpg'); height: 465px; background-position: center 0px; }
+ input[type=email],
+ input[type=password]     { height: 30px; width: 400px; }
+
+ form.new_user            { text-align: left; width: 400px; margin: 0 auto; padding: 30px 0px 10px 0px;}
+
+ header                   { background: #141414; height: 72px; background-position: center 0px; }
  header ul#right-links    { float: right; margin-right: 105px; }
  header ul                { margin-top: 25px; }
  header ul li             { display: inline; margin-right: 35px; }
- header ul li a           { color: #8e8e8e; font-size: 12px; margin-top: -20px;}
- header ul li a:hover     { color: #ffffff;}
+ header ul li a           { color: #8e8e8e !important; font-size: 12px; margin-top: -20px;}
+ header ul li a:hover     { color: #ffffff; }
+ header #usa-flag         { margin-top: -7px; }
+
+ #banner                  { background-image: url('/assets/header.jpg'); height: 395px; background-position: center 0px; }
 
  div#prearea h3           { margin: 100px 0; }
  div#prearea li           { float: left; border-right: 1px solid #f1f1f1; padding: 0px 10px; }

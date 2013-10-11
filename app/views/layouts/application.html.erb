@@ -18,8 +18,15 @@
         <li><a href="#">ENCHANT</a></li>
       </ul>
 
+
       <ul id="right-links">
-        <li><a href="#">SIGN IN</a></li>
+        <li><%= image_tag 'usa.jpg', :class => 'xright', :id => 'usa-flag' %></li>
+        <% if user_signed_in? %>
+        <li><%= link_to current_user.email, '#' %></li>
+        <li><%= link_to 'SIGN OUT', 'sign_out' %></li>
+        <% else %>
+        <li><%= link_to 'SIGN IN', '/sign_in' %></li>
+        <% end %>
       </ul>
     </div>
   </header>
