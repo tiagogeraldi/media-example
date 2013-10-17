@@ -1,0 +1,21 @@
+<div class="belong-modal modal fade">
+  <div class="modal-body">
+    <% if @asset.data.type == 'video' %>
+
+    <video id="my_video_1" class="video-js vjs-default-skin" controls
+    preload="auto" width="640" height="234" poster="<%= @asset.data.thumbnail %>"
+    data-setup="{}">
+    <source src="<%= @asset.data.url %>" type='video/mp4'>
+    </video>
+
+    <% else %>
+
+    <%= image_tag(@asset.data.url) %>
+
+    <% end %>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn remove" onclick="removeVideo()" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>

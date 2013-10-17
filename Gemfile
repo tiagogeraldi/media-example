@@ -25,6 +25,9 @@ end
 
 gem 'jquery-rails'
 
+gem 'sass-rails', '~> 3.2.3'
+gem 'bootstrap-sass'
+
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'

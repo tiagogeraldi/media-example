@@ -1,14 +1,21 @@
-<h2>Video Upload</h2>
+<div class="well signup container">
+  <h2>Video Upload</h2>
 
-<%= form_for :video, :url => welcomes_path, input_html: { multipart: :true } do |f| %>
+  <%= form_for :video, :url => welcomes_path, input_html: { multipart: :true }, :html => { :class => 'form-signin' } do |f| %>
 
-<p>
-  <%= f.label :video %>
-  <%= f.file_field :video %>
-</p>
+  <p>
+    <%= f.label :video %>
+    <%= f.file_field :video %>
+  </p>
 
-<p>
-  <%= f.submit %>
-</p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
 
-<% end %>
+  <p>
+    <%= f.submit :class => 'btn btn-primary' %>
+  </p>
+
+  <% end %>
+</div>

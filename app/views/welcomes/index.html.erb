@@ -38,7 +38,7 @@
     <ul>
       <% @assets.data.each do |asset| %>
       <li>
-        <%= link_to image_tag(asset.thumbnail), welcome_path(id: asset.id) %><br/>
+        <%= link_to image_tag(asset.thumbnail), welcome_path(id: asset.id), remote: :true %><br/>
         <%= asset.user.name %>
       </li>
        <% end %>
