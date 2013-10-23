@@ -1,39 +1,64 @@
 <div id="banner">
-  <div id="ban-links">
-    <%= link_to image_tag('submit.jpg'), new_welcome_path %>
-    <%= link_to image_tag('learnmore.jpg'), '#' %>
+  <div class="content">
+    <div class="ban-content pull-right">
+      <span>Chant it up</span>
+      <p>
+        Sing, upload and mix. <br>
+        Show'em what you're made of.
+      </p>
+
+      <div id="ban-links">
+        <%= link_to 'Submit Your Video', new_welcome_path, class: 'ban-upload' %>
+        <%= link_to 'Learn More', '#' %>
+      </div>
+    </div>
   </div>
 </div>
 
 <div id="prearea" class="content">
-  <h3><%= image_tag 'subtitle.jpg' %></h3>
+  <h2>give our national <br>team a voice</h2>
+  <p>
+    Collaboratively create our new chants mixing<br/>
+    and matching existing songs or creating your own.
+  </p>
 
-  <div class="leftcontent">
-    <ul class="xleft">
-      <li><a href="#">ALL</a></li>
-      <li><a href="#">MOST POPULAR</a></li>
-      <li><a href="#">VOICE</a></li>
-      <li><a href="#">INSTRUMENTS</a></li>
-      <li class="last"><a href="#">LYRICS</a></li>
-    </ul>
+  <div class="row-fluid">
+    <div class="span4">
+      <div class="pull-left">
+        <ul>
+          <li class="pull-left"><a href="#">ALL</a></li>
+          <li class="pull-left"><a href="#">MOST POPULAR</a></li>
+          <li class="pull-left"><a href="#">VOICE</a></li>
+          <li class="pull-left"><a href="#">INSTRUMENTS</a></li>
+          <li class="pull-left last"><a href="#">LYRICS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="span4">
+      <%= image_tag 'nav.jpg', class: 'xcenter' %>
+    </div>
+
+    <div class="span3 pull-right" id="filter">
+      <input type="text" placeholder="Filter">
+    </div>
   </div>
-
-  <div class="rightcontent">
-    <%= image_tag 'filter.jpg', class: 'xright' %>
-  </div>
-
-  <%= image_tag 'nav.jpg', class: 'xcenter' %>
-
-  <br class="xclear"/>
 </div>
 
 <div id="gallery">
   <div class="content">
-    <%= image_tag 'hashtag.jpg', class: 'xleft' %>
+    <div class="row">
+      <div class="span6">
+        <span id="hashtag" class="pull-left">#NikeEnchant</span>
+      </div>
 
-    <%= image_tag 'powered.jpg', class: 'xright' %>
-
-    <br class="xclear"/>
+      <div class="span4 pull-right">
+        <span id="powered">
+          <%= image_tag 'chute.png' %>
+          Powered by Chute
+        </span>
+      </div>
+    </div>
 
     <ul>
       <% @assets.data.each do |asset| %>
@@ -41,9 +66,9 @@
         <%= link_to image_tag(asset.thumbnail), welcome_path(id: asset.id), remote: :true %><br/>
         <%= asset.user.name %>
       </li>
-       <% end %>
-     </ul>
+      <% end %>
+    </ul>
 
-     <br class="xclear"/>
-   </div>
- </div>
+    <br class="xclear"/>
+  </div>
+</div>
