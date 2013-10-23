@@ -45,7 +45,7 @@
  header ul li a:hover     { color: #ffffff; }
  header #usa-flag         { margin-top: -7px; }
 
- #banner                  { background-image: url('/assets/header.png'); height: 393px; background-position: center 0px; }
+ #banner                  { background-image: url('/assets/header.jpg'); height: 393px; background-position: center 0px; }
  #banner .ban-content     { padding: 80px 0 0 0; margin: 0 auto; color: #fff; font-family: "Pathway Gothic One",sans-serif; text-align:left;}
  #banner .ban-content span{ display: inline-block; font-family: "Pathway Gothic One",sans-serif;
                             font-size: 45px; text-transform: uppercase;
@@ -92,8 +92,9 @@ footer                    { height: 592px; background-image: url('/assets/footer
 
 .form-signin input[type="checkbox"] { margin-right: 10px; }
 
+.form-signin textarea      { width: 335px !important; }
 .form-signin input[type="email"],
-.form-signin input[type="password"] { font-size: 16px; height: auto;
+.form-signin input[type="password"] { font-size: 16px; height: auto; width: 335px;
                                       margin-bottom: 15px; padding: 7px 9px;
                                     }
 
