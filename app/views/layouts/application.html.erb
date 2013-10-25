@@ -8,6 +8,8 @@
 
   <link href="http://vjs.zencdn.net/4.2/video-js.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Archivo+Black|Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
   <script src="http://vjs.zencdn.net/4.2/video.js"></script>
 </head>
 <body>
@@ -37,6 +39,44 @@
 
   <%= yield %>
 
-  <footer></footer>
+  <footer>
+    <div class="content">
+      <div class="row">
+        <div class="span3 offset1">
+          <div class="foot-img"><%= image_tag 'letsgo.png' %></div>
+          <h3>HEY HO, LET'S GO!</h3>
+          <p>
+            Login using your favourite social<br/>
+            media site and upload your <br/>
+            video singing or playing an rhythm.<br/>
+            Or choose a video from our database.
+          </p>
+        </div>
+
+        <div class="span3">
+          <div class="foot-img"><%= image_tag 'disco.png' %></div>
+          <h3>ENCHANT</h3>
+
+          <p>
+            Create your own unique <br/>
+            chant choosing the voice, <br/>
+            rhythm and effects.
+          </p>
+        </div>
+
+        <div class="span3">
+          <div class="foot-img"><%= image_tag 'like.png' %></div>
+          <h3>VOTE</h3>
+
+          <p>
+            Now you're on the competition <br/>
+            for the best brazilian team chant.<br/>
+            The most voted will be one of the <br/>
+            official chant for brazilian fans.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

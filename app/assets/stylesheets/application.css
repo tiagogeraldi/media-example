@@ -77,7 +77,12 @@ div#prearea p             { margin-bottom: 120px; }
  div#gallery ul li        { background: #fff; padding: 10px; border: 1px solid #dcdcdc;
                             margin: 0px 17px 17px 0px; float: left; color: #484848; font-size: 11px; text-align: left; }
 
-footer                    { height: 592px; background-image: url('/assets/footer.png'); background-position: center 0px; }
+footer                    { height: 592px; background-image: url('/assets/footer.jpg'); background-position: center 0px; color: #222; }
+footer p                  { font-family: "Droid Sans",sans-serif !important; }
+footer h3                 { color: #111; font-family: "Pathway Gothic One",sans-serif !important; font-size: 32px; font-weight: bold; margin: 25px 0px 15px 0px;}
+footer .foot-img          { height: 120px; margin-top: 150px; position:relative; }
+footer img                { position:absolute; top:0; bottom:0; left: 0; right: 0; margin:auto; }
+footer .span3             { margin-right: 20px !important; }
 
 .signup                   { margin-top: 25px; }
 
